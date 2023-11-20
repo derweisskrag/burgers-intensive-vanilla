@@ -361,6 +361,7 @@ body {
    color: white;
    width: 342px;
    height: 60px;
+   border-radius: 8px;
    box-sizing: border-box;
    outline: none;
    border: 1px solid transparent;

@@ -24,13 +24,28 @@
 				<nav class="menu">
 					<ul class="menu-list">
 						<li class="menu-item">
-							<a href="#">Почему у нас</a>
+							<a 
+								href="#"
+								data-link="why"
+							>
+								Почему у нас
+							</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">Меню бургеров</a>
+							<a 
+								href="#"
+								data-link="products"
+							>
+								Меню бургеров
+							</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">Оформление заказа</a>
+							<a 
+								href="#"
+								data-link="order"
+							>
+								Оформление заказа
+							</a>
 						</li>
 					</ul>
 
@@ -41,6 +56,7 @@
 					<div 
 						class="currency"
 						title="Изменить валюту"
+						id="change-currency"
 					>
 						$
 					</div>
@@ -65,7 +81,12 @@
 
 					<!-- Button -->
 					<div class="main-action">
-						<button class="button">Смотреть меню</button>
+						<button 
+							class="button"
+							id="main-action-button"
+						>
+							Смотреть меню
+						</button>
 					</div>
 				</div>
 
@@ -82,7 +103,7 @@
 	</section>
 
 	<!-- Why section -->
-	<section class="why">
+	<section class="why" id="why">
 		<div class="container">
 			<div class=" why-title common-title">
 				Почему нас выбирают?
@@ -141,7 +162,7 @@
 	</section>
 
 	<!-- The third section -->
-	<section class="products">
+	<section class="products" id="products">
 		<div class="container">
 			<div class="products-title common-title">
 				выберите свой бургер
@@ -168,7 +189,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="8"
+							>
 								8 $
 							</div>
 
@@ -212,7 +236,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="7"
+							>
 								7 $
 							</div>
 
@@ -256,7 +283,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="10"
+							>
 								10 $
 							</div>
 
@@ -300,7 +330,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="7"
+							>
 								7 $
 							</div>
 
@@ -345,7 +378,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="8"
+							>
 								8 $
 							</div>
 
@@ -389,7 +425,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="8"
+							>
 								8 $
 							</div>
 
@@ -434,7 +473,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="8"
+							>
 								8 $
 							</div>
 
@@ -478,7 +520,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="7"
+							>
 								7 $
 							</div>
 
@@ -521,7 +566,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="11"
+							>
 								11 $
 							</div>
 
@@ -563,7 +611,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="9"
+							>
 								9 $
 							</div>
 
@@ -605,7 +656,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="8"
+							>
 								8 $
 							</div>
 
@@ -647,7 +701,10 @@
 
 					<div class="products-item-extra">
 						<div class="products-item-info">
-							<div class="products-item-price">
+							<div 
+								class="products-item-price"
+								data-base-price="9"
+							>
 								9 $
 							</div>
 
@@ -676,7 +733,7 @@
 	</section>
 
 
-	<section class="order">
+	<section class="order" id="order">
 		<div class="container">
 			<div class="order-title common-title">
 				оформление заказа
@@ -702,7 +759,8 @@
 					<div class="order-form-input">
 						<input 
 							type="text"
-							placeholder="Ваш заказ" 
+							placeholder="Ваш заказ"
+							id="burger"
 						>
 					</div>
 
@@ -710,6 +768,7 @@
 						<input 
 							type="text"
 							placeholder="Ваше имя" 
+							id="name"
 						>
 					</div>
 
@@ -717,10 +776,11 @@
 						<input 
 							type="text"
 							placeholder="Ваш телефон" 
+							id="phone"
 						>
 					</div>
 
-					<button class="button">
+					<button class="button" id="order-action">
 						Оформить заказ
 					</button>
 				</div>
@@ -745,6 +805,6 @@
 			</div>
 		</div>
 	</footer>
-
+	<script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>
